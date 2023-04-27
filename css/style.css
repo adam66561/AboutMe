@@ -33,13 +33,21 @@ nav{
 
 .sectionContent{
     margin: 0 auto;
-    display: flex;
+    /* display: flex; */
     width: 80%;
     height: 100%;
     font-size: 2rem;
+    /* align-items: flex-start; */
+    /* justify-content: space-between; */
+    text-align: center;
+}
+
+.sectionContent.home{
+
+    display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    text-align: center;
+
 }
 
 .sectionContent img{
@@ -97,6 +105,7 @@ section#aboutMe h2{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    height: 60%;
 }
 
 a, 
@@ -112,6 +121,36 @@ a:hover{
 
 #homeSection{
     position: relative;
+}
+
+#projectsArea{
+    margin: 50px auto 0 auto;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#projectsShow{
+    background-color: #d1d1d0;
+    width: 75%;
+}
+
+.projectsButton{
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    border: none;
+    background-color: #cacaca;
+}
+
+.projectsButton img{
+    width: 50%;
+}
+
+input{
+    width: 80%;
+    height: 80%;
 }
 
 .home-icon{
