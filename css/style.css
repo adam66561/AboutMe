@@ -77,6 +77,8 @@ section#homeSection {
     background: white url('../photos/background/birds-white-noborders.jpg') no-repeat 0 0; 
     background-size: cover;
     background-position: 0 -100px;
+    display: flex;
+    
 }
 
 section#aboutMe{
@@ -203,6 +205,21 @@ input{
 }.home-icon:nth-child(10){
     top: -10%;
     left: 5%;
+}.home-icon:nth-child(11){
+    top: 50%;
+    right: 40%;
+}.home-icon:nth-child(12){
+    top: 20%;
+    right: 50%;
+}.home-icon:nth-child(13){
+    top: 50%;
+    right: 90%;
+}.home-icon:nth-child(14){
+    top: -15%;
+    right: 30%;
+}.home-icon:nth-child(15){
+    top: -15%;
+    right: 70%;
 }
 
 @keyframes home-icon-moving-anim{
