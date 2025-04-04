@@ -160,7 +160,7 @@
       });
     }
   }
-})({"6DHTQ":[function(require,module,exports,__globalThis) {
+})({"avJaP":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -684,16 +684,10 @@ var _app = require("./App");
 var _appDefault = parcelHelpers.interopDefault(_app);
 const container = document.getElementById('root');
 const root = (0, _clientDefault.default).createRoot(container);
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).StrictMode, {
-    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
-        fileName: "src/js/index.js",
-        lineNumber: 10,
-        columnNumber: 5
-    }, undefined)
-}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
     fileName: "src/js/index.js",
     lineNumber: 9,
-    columnNumber: 3
+    columnNumber: 5
 }, undefined));
 
   $parcel$ReactRefreshHelpers$d71c.postlude(module);
@@ -701,7 +695,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","./App":"9eRhl","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dVPUn":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react-dom/client":"hrvwu","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react":"jMk1U","./App":"9eRhl","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"dVPUn":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -16100,137 +16094,7 @@ module.exports = require("b0f0e6b9e8349dac");
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 })();
 
-},{"6f0162e9ab224cd4":"jMk1U"}],"9eRhl":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$e0f5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$e0f5.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e0f5.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _podsumowanie = require("./Podsumowanie"); // Upewnij się, że ścieżka jest poprawna
-var _podsumowanieDefault = parcelHelpers.interopDefault(_podsumowanie);
-function App() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _podsumowanieDefault.default), {}, void 0, false, {
-            fileName: "src/js/App.jsx",
-            lineNumber: 7,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "src/js/App.jsx",
-        lineNumber: 6,
-        columnNumber: 5
-    }, this);
-}
-_c = App;
-exports.default = App;
-var _c;
-$RefreshReg$(_c, "App");
-
-  $parcel$ReactRefreshHelpers$e0f5.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./Podsumowanie":"9XEwi","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"9XEwi":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$4008 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$4008.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$4008.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _s = $RefreshSig$();
-function Podsumowanie() {
-    _s();
-    const [content, setContent] = (0, _react.useState)('');
-    (0, _react.useEffect)(()=>{
-        fetch('/text/podsumowanie.txt').then((response)=>{
-            if (!response.ok) throw new Error("B\u0142\u0105d sieci: " + response.status);
-            return response.text();
-        }).then((data)=>{
-            setContent(data);
-        }).catch((error)=>{
-            console.error("Wyst\u0105pi\u0142 problem z pobieraniem pliku:", error);
-        });
-    }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        id: "podsumowanie",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Podsumowanie"
-            }, void 0, false, {
-                fileName: "src/js/Podsumowanie.js",
-                lineNumber: 24,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: content
-            }, void 0, false, {
-                fileName: "src/js/Podsumowanie.js",
-                lineNumber: 25,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/js/Podsumowanie.js",
-        lineNumber: 23,
-        columnNumber: 5
-    }, this);
-}
-_s(Podsumowanie, "wipnac41BTB3eHT+ORLT1pgXER0=");
-_c = Podsumowanie;
-exports.default = Podsumowanie;
-var _c;
-$RefreshReg$(_c, "Podsumowanie");
-
-  $parcel$ReactRefreshHelpers$4008.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"jnFvT":[function(require,module,exports,__globalThis) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule' || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"7h6Pi":[function(require,module,exports,__globalThis) {
+},{"6f0162e9ab224cd4":"jMk1U"}],"7h6Pi":[function(require,module,exports,__globalThis) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -18508,6 +18372,207 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["6DHTQ","6kb64"], "6kb64", "parcelRequire8f8b", {}, null, null, "http://localhost:1234")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jnFvT":[function(require,module,exports,__globalThis) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule' || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"9eRhl":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$e0f5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$e0f5.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e0f5.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _podsumowanie = require("./Podsumowanie");
+var _podsumowanieDefault = parcelHelpers.interopDefault(_podsumowanie);
+var _projekty = require("./Projekty");
+var _projektyDefault = parcelHelpers.interopDefault(_projekty);
+function App() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _podsumowanieDefault.default), {}, void 0, false, {
+                fileName: "src/js/App.jsx",
+                lineNumber: 8,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projektyDefault.default), {}, void 0, false, {
+                fileName: "src/js/App.jsx",
+                lineNumber: 9,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/js/App.jsx",
+        lineNumber: 7,
+        columnNumber: 5
+    }, this);
+}
+_c = App;
+exports.default = App;
+var _c;
+$RefreshReg$(_c, "App");
+
+  $parcel$ReactRefreshHelpers$e0f5.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./Podsumowanie":"9XEwi","./Projekty":"560dW"}],"9XEwi":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$4008 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$4008.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4008.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+function Podsumowanie() {
+    _s();
+    const [content, setContent] = (0, _react.useState)('');
+    (0, _react.useEffect)(()=>{
+        fetch('https://raw.githubusercontent.com/adam66561/AboutMe/main/public/text/podsumowanie.txt').then((response)=>{
+            if (!response.ok) throw new Error("B\u0142\u0105d sieci: " + response.status);
+            return response.text();
+        }).then((data)=>{
+            setContent(data);
+        }).catch((error)=>{
+            console.error("Wyst\u0105pi\u0142 problem z pobieraniem pliku:", error);
+        });
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        id: "podsumowanie",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Podsumowanie"
+            }, void 0, false, {
+                fileName: "src/js/Podsumowanie.js",
+                lineNumber: 24,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: content
+            }, void 0, false, {
+                fileName: "src/js/Podsumowanie.js",
+                lineNumber: 25,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/js/Podsumowanie.js",
+        lineNumber: 23,
+        columnNumber: 5
+    }, this);
+}
+_s(Podsumowanie, "wipnac41BTB3eHT+ORLT1pgXER0=");
+_c = Podsumowanie;
+exports.default = Podsumowanie;
+var _c;
+$RefreshReg$(_c, "Podsumowanie");
+
+  $parcel$ReactRefreshHelpers$4008.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"560dW":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$e2d2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$e2d2.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e2d2.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+function Projekty() {
+    _s();
+    const [content, setContent] = (0, _react.useState)('');
+    (0, _react.useEffect)(()=>{
+        fetch('https://raw.githubusercontent.com/adam66561/AboutMe/main/public/text/projekty.txt').then((response)=>{
+            if (!response.ok) throw new Error("B\u0142\u0105d sieci: " + response.status);
+            return response.text();
+        }).then((data)=>{
+            setContent(data);
+        }).catch((error)=>{
+            console.error("Wyst\u0105pi\u0142 problem z pobieraniem pliku:", error);
+        });
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        id: "podsumowanie",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Projekty"
+            }, void 0, false, {
+                fileName: "src/js/Projekty.js",
+                lineNumber: 24,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: content
+            }, void 0, false, {
+                fileName: "src/js/Projekty.js",
+                lineNumber: 25,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/js/Projekty.js",
+        lineNumber: 23,
+        columnNumber: 5
+    }, this);
+}
+_s(Projekty, "wipnac41BTB3eHT+ORLT1pgXER0=");
+_c = Projekty;
+exports.default = Projekty;
+var _c;
+$RefreshReg$(_c, "Projekty");
+
+  $parcel$ReactRefreshHelpers$e2d2.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["avJaP","6kb64"], "6kb64", "parcelRequire8f8b", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=AboutMe.6528c13b.js.map

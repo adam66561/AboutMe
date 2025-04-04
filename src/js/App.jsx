@@ -1,10 +1,12 @@
 import React from 'react';
-import Podsumowanie from './Podsumowanie'; // Upewnij się, że ścieżka jest poprawna
+import Podsumowanie from './Podsumowanie'; 
+import Projekty from './Projekty'; 
 
 function App() {
   return (
     <div>
       <Podsumowanie />
+      <Projekty />
     </div>
   );
 }

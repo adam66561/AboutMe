@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
-function Podsumowanie() {
+function Projekty() {
   const [content, setContent] = useState('');
 
   useEffect(() => {
-    fetch('https://raw.githubusercontent.com/adam66561/AboutMe/main/public/text/podsumowanie.txt')
+    fetch('https://raw.githubusercontent.com/adam66561/AboutMe/main/public/text/projekty.txt')
       .then(response => {
         if (!response.ok) {
           throw new Error('Błąd sieci: ' + response.status);
@@ -21,10 +21,10 @@ function Podsumowanie() {
 
   return (
     <section id="podsumowanie">
-      <h2>Podsumowanie</h2>
+      <h2>Projekty</h2>
       <p>{content}</p>
     </section>
   );
 }
 
-export default Podsumowanie;
+export default Projekty;
